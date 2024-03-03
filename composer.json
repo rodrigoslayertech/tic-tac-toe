@@ -1,32 +1,29 @@
 {
-   "name": "bootgly/bootgly.console",
+   "name": "rodrigoslayertech/tic-tac-toe",
    "type": "project",
-   "description": "The Bootgly Console template.",
-   "license": "MIT",
+   "description": "The Classic Tic-Tac-Toe Game made with Bootgly CLI (from Bootgly PHP Framework).",
    "keywords": [
+      "tic",
+      "tac",
+      "toe",
+      "cli",
+      "games",
       "bootgly",
       "php",
-      "framework",
-      "cli",
-      "console",
-      "template"
+      "framework"
    ],
+   "license": "MIT",
    "authors": [
       {
          "name": "Rodrigo Vieira",
-         "email": "rodrigo@bootgly.com",
-         "homepage": "https://www.bootgly.com/"
+         "email": "rodrigo@bootgly.com"
       }
    ],
-
    "config": {
       "vendor-dir": "./@imports/"
    },
-
    "require": {
       "php": "^8.2",
-      "bootgly/bootgly": "dev-main",
-      "bootgly/bootgly-console": "dev-main"
-   },
-   "minimum-stability": "dev"
+      "bootgly/bootgly": "v0.4.0-beta"
+   }
 }
