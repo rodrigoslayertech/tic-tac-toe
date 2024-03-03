@@ -2,17 +2,14 @@
 namespace projects\Bootgly\CLI\games;
 
 
-use Bootgly\ABI\Data\__String\Escapeable\Mouse\Reportable;
 use Bootgly\CLI\Terminal\Input;
 use Bootgly\CLI\Terminal\Input\Mousestrokes;
 use Bootgly\CLI\Terminal\Output;
 use Bootgly\CLI\Terminal\Reporting\Mouse;
 
+
 class TicTacToe
 {
-   use Reportable;
-
-
    private Input $Input;
    private Output $Output;
    private Mouse $Mouse;
