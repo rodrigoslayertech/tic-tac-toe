@@ -61,7 +61,7 @@ To start the game, in the root folder type in your terminal:
 ---
 
 ## 🖼 Screencast
-![Classic Snake Game](video.gif "Classic Snake Game - powered by Bootgly CLI")
+![Classic Snake Game](screencast.gif "Classic Snake Game - powered by Bootgly CLI")
 
 ---
 
