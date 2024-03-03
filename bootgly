@@ -1,0 +1,39 @@
+#!/usr/bin/env php
+<?php
+/*
+ * --------------------------------------------------------------------------
+ * Bootgly PHP Framework
+ * Developed by Rodrigo Vieira (@rodrigoslayertech)
+ * Copyright 2023-present
+ * Licensed under MIT
+ * --------------------------------------------------------------------------
+ */
+
+define('BOOTGLY_WORKING_BASE', __DIR__);
+define('BOOTGLY_WORKING_DIR', BOOTGLY_WORKING_BASE . DIRECTORY_SEPARATOR);
+
+// @ Autoload Composer (if exists):
+(@include __DIR__ . '/@imports/autoload.php') ||
+(  // @ Autoload Bootgly Platforms (as git submodules):
+   (@include __DIR__ . '/Bootgly/autoload.php') &&
+   (@include __DIR__ . '/Console/autoload.php')
+) ||
+exit(<<<STATUS
+
+To install dependencies using composer:
+----------------\033[1;36m
+composer install
+\033[0m----------------\033[5m
+Or...\033[0m
+you can use only git submodule to manage and track dependencies:
+---------------------------------------\033[1;36m
+git submodule update --init --recursive
+\033[0m---------------------------------------
+
+Finally, test if the Bootgly CLI works with the following command:
+---------------------------------------\033[1;36m
+php bootgly
+\033[0m---------------------------------------
+
+
+STATUS);

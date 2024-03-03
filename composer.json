@@ -1,0 +1,32 @@
+{
+   "name": "bootgly/bootgly.console",
+   "type": "project",
+   "description": "The Bootgly Console template.",
+   "license": "MIT",
+   "keywords": [
+      "bootgly",
+      "php",
+      "framework",
+      "cli",
+      "console",
+      "template"
+   ],
+   "authors": [
+      {
+         "name": "Rodrigo Vieira",
+         "email": "rodrigo@bootgly.com",
+         "homepage": "https://www.bootgly.com/"
+      }
+   ],
+
+   "config": {
+      "vendor-dir": "./@imports/"
+   },
+
+   "require": {
+      "php": "^8.2",
+      "bootgly/bootgly": "dev-main",
+      "bootgly/bootgly-console": "dev-main"
+   },
+   "minimum-stability": "dev"
+}

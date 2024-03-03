@@ -1,0 +1,53 @@
+# Ignore IDEs folders...
+.idea/
+# Ignore files by extension...
+*.iso
+*.log
+# Ignore locks, bin, envs...
+composer
+composer.lock
+
+
+### @Bootgly ###
+
+## Global folders
+# Excluded
+**/&
+
+## Root folders
+# Boot
+@/*
+@imports
+!@/autoload.php
+
+!@/__php__/
+!@/__docker__/
+
+## Private files
+# Examples
+_*.example.php
+# Tests
+_*.test.php
+
+
+#-- /Bootgly --#
+# ...
+
+#-- Workables --#
+
+#- /projects
+# ...
+
+#- /scripts
+# Ignore private scripts
+/scripts/_*.php
+
+#- /workdata
+# Ignore all files here
+/workdata/*.*
+# Ignore all folder starting with @ here
+/workdata/@*/
+# Ignore known folders
+/workdata/cache/*
+/workdata/logs/*
+/workdata/temp/*
