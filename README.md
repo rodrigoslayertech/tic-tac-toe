@@ -21,36 +21,21 @@ The purpose was to demonstrate the power of Mouse Reporting abstraction of the B
 
 No additional extensions (like ncurses) were used, only `stty` system commands.
 
-## 🟢 Boot
-
-### 🤝 Compatibility
-
-Operation System | Terminal
---- | ---
-✅ Linux (Debian based) | ✅ Windows Terminal (WSL2)
-❌ Windows | ✅ GNOME
-❔ Unix | ❔ Zsh, Fish, Konsole, Terminator
-
-✅ = Compatible
-❌ = Incompatible
-❔ = Untested
-
-### 📦 Dependencies
-
-- PHP 8.2+ ⚠️
-- Opcache with JIT enabled (+50% performance) 👍
-- Composer ⚠️
-
-⚠️ = Required
-👍 = Recommended
-
 ---
 
 ## 🚀 Deploy
 
 ### ⚙️ Install
 
-`composer install`
+```bash
+composer install
+```
+
+or
+
+```bash
+git submodule update --init --recursive
+```
 
 ### ▶️ Play
 
@@ -60,8 +45,47 @@ To start the game, in the root folder type in your terminal:
 
 ---
 
-## 🖼 Screencast
-![Classic Snake Game](screencast.gif "Classic Snake Game - powered by Bootgly CLI")
+## 🟢 Requirements
+
+### 🤝 Compatibility
+
+Operation System | Compatibility
+--- | ---
+Linux (Debian based) | ✅
+Windows | ❌
+Unix | ❔
+
+Terminal | Compatibility
+--- | ---
+Windows Terminal (WSL2) | ✅
+Tabby |✅ 
+GNOME |✅ 
+Zsh, Fish, Konsole, Terminator |❔
+
+✅ = Compatible
+
+❌ = Incompatible
+
+❔ = Untested
+
+### 📦 Dependencies
+
+- PHP 8.2+ ⚠️
+- Opcache with JIT enabled (+50% performance) 👍
+
+⚠️ = Required
+
+👍 = Recommended
+
+---
+
+## 🖼 Preview
+
+### Video
+![Tic-Tac-Toe Game](screencast.gif "Tic-Tac-Toe - powered by Bootgly CLI")
+
+### Image
+![Tic-Tac-Toe Game](screenshot.png "Tic-Tac-Toe - powered by Bootgly CLI")
 
 ---
 
