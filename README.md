@@ -19,7 +19,7 @@ The purpose was to demonstrate the power of Mouse Reporting abstraction of the B
 
 > **This game uses only the mouse to play and has movements and click tracking.**
 
-No additional extensions (like ncurses) were used, only `stty` system commands.
+No additional extensions (like `ncurses`) were used, only `stty` system commands.
 
 ---
 
@@ -41,7 +41,9 @@ git submodule update --init --recursive
 
 To start the game, in the root folder type in your terminal:
 
-`php bootgly`
+```bash
+php bootgly
+```
 
 ---
 
