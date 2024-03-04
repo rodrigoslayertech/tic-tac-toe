@@ -192,15 +192,17 @@ class TicTacToe
       $Input->configure(blocking: false, canonical: false, echo: false);
 
       \pcntl_signal(SIGINT, function (int $signal)
-      use ($Input, $Mouse) {
+      use ($Input, $Output, $Mouse) {
          $Mouse->report(false);
          $Input->configure();
+         $Output->Cursor->show();
          exit;
       });
       \register_shutdown_function(function ()
-      use ($Input, $Mouse) {
+      use ($Input, $Output, $Mouse) {
          $Mouse->report(false);
          $Input->configure();
+         $Output->Cursor->show();
       });
 
       $this->display();
@@ -208,15 +210,15 @@ class TicTacToe
       $Output->Cursor->hide();
 
       $Game = &$this;
-      $this->Mouse->reporting(function (Mousestrokes $action, array $coordinate)
+      $this->Mouse->reporting(function (Mousestrokes $Action, array $coordinate)
          use ($Game) {
             [$col, $row] = $coordinate; // Mouse coordinate (x, y) in real time
 
-            if ($action === Mousestrokes::NONE_CLICK_WITH_MOVEMENT) {
+            if ($Action === Mousestrokes::NONE_CLICK_WITH_MOVEMENT) {
                $Game->hover($col, $row);
             }
 
-            if ($action === Mousestrokes::LEFT_CLICK) {
+            if ($Action === Mousestrokes::LEFT_CLICK) {
                $Game->click($col, $row);
             }
 
@@ -225,5 +227,6 @@ class TicTacToe
 
       $Mouse->report(false);
       $Input->configure();
+      $Output->Cursor->show();
    }
 }
